@@ -11,7 +11,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -29,6 +31,8 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "react-hot-loader": "^4.12.14"
-  }
+  },
+  "homepage": "http://snaag.github.io/js-fe-study"
 }
