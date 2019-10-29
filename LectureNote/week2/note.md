@@ -19,9 +19,6 @@
 ### 배열
 * 배열 안에는 모든 타입의 data가 섞여서 들어갈 수 있다. 
 * javascript에서 배열은 list를 뜻한다.
-#### list와 array의 차이는 무엇일까? 
-  * 찾아서 쓰기(참고; https://opentutorials.org/module/1335/8677)
-
 * const로 선언되어도 배열 안의 값을 바꿀 수 있다. 하지만, 새로운 배열이나 값으로 재할당 할 수 없다.
 ```javascript
 const num = ['one', 'two', 'three','five'];
@@ -29,6 +26,13 @@ num[3] = 'four';
 console.log(num); // [ 'one', 'two', 'three', 'four' ]
 num = [1,2,3,4]; // TypeError: Assignment to constant variable
 ```
+
+> list와 array의 차이는 무엇일까? 
+  * array는 연속된 메모리공간에 올라가 데이터가 순차적으로 저장된다.
+  * list는 데이터와 다음 노드를 가리키는 주소값이 함께 저장되기 때문에 메모리가 연속되지 않아도 된다.
+  (그럼 list는 원래 linkedlist인건가..) 
+  * javascript의 array는 list형태라는데 왜 array라고 이름 붙인걸까 ㅎ
+
 
 ### 배열의 구조분해(Destructuring)
 * ES6에서 추가된 기능!
