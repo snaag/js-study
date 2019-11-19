@@ -24,22 +24,23 @@
 ### JS 핵심 개념
 
 - `이상아` **3주차** Scope, Closure [정리](./LectureNote/week3/note.md)
-- `양유성` **4주차** OOP, FP, Prototype
+- `양유성` **4주차** OOP, FP, Prototype 
+- `이상아` **5주차** Prototype [정리](./LectureNote/week5.md)
 
 ### TDD
 
-- `김김김` **5주차** TDD
+- `이소윤` **6주차** TDD
 
 ### Front-End
 
-- `김김김` **6주차** HTML, CSS, DOM 1
-- `김김김` **7주차** HTML, CSS, DOM 2
+- `김라희` **7주차** HTML, CSS, DOM 1
+- `김라희` **8주차** HTML, CSS, DOM 2
 
 ### JS 심화 개념
 
-- `김김김` **8주차** 비동기 호출, 타이머 API
-- `김김김` **9주차** 서버 요청하기, this
-- `김김김` **10주차** 함수 메소드
+- `양유성` **9주차** 비동기 호출, 타이머 API
+- `이상아` **10주차** 서버 요청하기, this
+- `김주완` **11주차** 함수 메소드
 
 ## 참고자료
 
