@@ -25,11 +25,11 @@
 
 - `이상아` **3주차** Scope, Closure [정리](./LectureNote/week3/note.md)
 - `양유성` **4주차** OOP, FP, Prototype [정리](./LectureNote/week4/note.md)
-- `이상아` **5주차** Prototype [정리](./LectureNote/week5.md)
+- `이상아` **5주차** Prototype [정리](./LectureNote/week5/note.md)
 
 ### TDD
 
-- `이소윤` **6주차** TDD
+- `이소윤` **6주차** TDD [정리](./LectureNote/week6/note.md)
 
 ### Front-End
 
