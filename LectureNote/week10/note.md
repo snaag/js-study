@@ -372,3 +372,17 @@ c = multiply(20, 30);
 
 ![6](/Users/isang-a/Desktop/JavaScript/js-fe-study/LectureNote/week10/image/6.png)
 
+## 참고자료
+
+https://blog.bitsrc.io/understanding-execution-context-and-execution-stack-in-javascript-1c9ea8642dd0
+
+[https://velog.io/@imacoolgirlyo/JS-자바스크립트의-Hoisting-The-Execution-Context-호이스팅-실행-컨텍스트-6bjsmmlmgy]([https://velog.io/@imacoolgirlyo/JS-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98-Hoisting-The-Execution-Context-%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85-%EC%8B%A4%ED%96%89-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8-6bjsmmlmgy](https://velog.io/@imacoolgirlyo/JS-자바스크립트의-Hoisting-The-Execution-Context-호이스팅-실행-컨텍스트-6bjsmmlmgy))
+
+https://hackernoon.com/execution-context-in-javascript-319dd72e8e2c
+
+https://meetup.toast.com/posts/129
+
+https://poiemaweb.com/js-execution-context
+
+책 인사이드 자바스크립트
+
