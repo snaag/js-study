@@ -354,23 +354,23 @@ c = multiply(20, 30);
 
 
 
-![1](/Users/isang-a/Desktop/JavaScript/js-fe-study/LectureNote/week10/image/1.png)
+![1](./image/1.png)
 
 이 때 a(`let`), b(`const`)와 c(`var`)의 할당된 값이 다른 이유는 `let`과 `const`는 값이 할당이 되기 전 까지 접근할 수 없도록 하기 위함이다. (`let` 과 `const` 는 할당되기 전에 사용할 경우 `ReferenceError` 가 나는 이유와도 같다)
 
 
 
-![2](/Users/isang-a/Desktop/JavaScript/js-fe-study/LectureNote/week10/image/2.png)
+![2](./image/2.png)
 
-![3](/Users/isang-a/Desktop/JavaScript/js-fe-study/LectureNote/week10/image/3.png)
+![3](./image/3.png)
 
-![4](/Users/isang-a/Desktop/JavaScript/js-fe-study/LectureNote/week10/image/4.png)
+![4](./image/4.png)
 
-![5](/Users/isang-a/Desktop/JavaScript/js-fe-study/LectureNote/week10/image/5.png)
+![5](./image/5.png)
 
 
 
-![6](/Users/isang-a/Desktop/JavaScript/js-fe-study/LectureNote/week10/image/6.png)
+![6](./image/6.png)
 
 ## 참고자료
 
