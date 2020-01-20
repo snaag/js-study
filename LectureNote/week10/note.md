@@ -12,7 +12,7 @@
 
 ## 내용
 
-지난 JavaScript, Front-End 발표 주제는 **this** 였지만, 공부하다 보니 실행 컨텍스트에 대한 내용이 선행되야 할 것 같아 실행 컨텍스트에 대하여 공부를 하게 되었다.
+지난 JavaScript, Front-End 발표 주제는 **this** 였지만, 공부하다 보니 실행 컨텍스트에 대한 내용이 선행되야 할 것 같아 **실행 컨텍스트**에 대하여 공부를 하게 되었다.
 
 
 
@@ -335,6 +335,39 @@ FunctionExectionContext = {
 
 
 
+#### Note
+
+생성 단계(Creation phase)에서 EC가 생성되면, 엔진은 해당 컨텍스트에서 실행에 필요한 여러 가지 정보를 담을 객체를 생성한다. 그리고 이를 활성 객체(변수 객체)라고 한다. 즉 **EC 안에 활성 객체가 있고 그 안에 아래의 값들이 있는 것**이다.
+
+1. 스코프 체인
+2. arguments 객체 생성
+3. 변수의 생성 (할당 말고)
+4. `this` 의 바인딩
+
+그리고 이것들은 컴파일 과정을 거치며 만들어진다. 즉 **생성 단계는 컴파일레이션 과정과 같고, EC는 컴파일레이션의 단위**이다. [컴파일레이션 참고](https://github.com/snaag/js-fe-study/blob/master/LectureNote/week3/note.md#compiler-do-compilation)
+
+
+
+활성 객체를 코드와 그림으로 알아보자.
+
+```javascript
+function execute(param1, param2) {
+  var a = 1, b = 2;
+  function func() {
+    return a+b;
+  }
+  return param1 + param2 + func();
+}
+
+execute(3, 4); // 실행 시
+```
+
+`execute(3, 4)` 를 실행했을 때, EC가 생성 단계를 거치고 난 후의 모습이다.
+
+![ec](./image/ec.png)
+
+
+
 #### Execution phase 
 
 앞서 선언한 변수에 모두 할당을 하고, 코드를 실행하는 단계이다.
@@ -371,6 +404,37 @@ c = multiply(20, 30);
 
 
 ![6](./image/6.png)
+
+#### Note
+
+1번 그림에서 짧게 이야기했지만 `var` 로 선언된 c는 생성 단계에서 `undefined` 를 갖는다. 그리고 이는  아래 코드와 같이, `var` 로 선언된 변수가 호이스팅이 일어나는 이유와도 같다.
+
+즉 실행 전에, 미리 선언(만)을 다 시켜버리기 때문에, 선언이 어떤 변수를 사용하는 부분 보다 아래에 되어 있더라도 문제없이 사용이 가능한 것이다.
+
+```javascript
+a = 10;
+console.log(a); // 10
+var a;
+```
+
+```javascript
+/* 위 코드는 컴파일 과정(Creation Phase)을 거치면, 아래와 같은 코드로 바뀐다 */
+var a;
+a = 10;
+console.log(a);
+```
+
+
+
+추가적으로 `const`, `let`은 호이스팅이 일어나지 않는 것이 아니다. (사실 일어난다)
+
+`const`, `let` 은 값이 할당이 되기 전 까지(Execution phase에서 할당 코드가 실행되기 전 까지) [**TDZ(Temporal Dead Zone)**](https://github.com/snaag/js-fe-study/blob/master/LectureNote/week3/note.md#tdz)라는 곳에 머무른다. 어떤 변수가 이 곳에 있는 동안은 스코프 내에 있는 것이라 생각하지 않기 때문에 엔진이 해당 변수를 찾지 못한다. 
+
+그리고 할당이 되면, 이 곳에서 벗어나 참조(RHS 탐색)를 할 수 있는 상태가 되는 것이다. 즉 **할당이 되기 전 까지는 변수를 찾을 수가 없는 것**이다.
+
+
+
+
 
 ## 참고자료
 
