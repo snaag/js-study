@@ -40,7 +40,7 @@
 
 ### JS 심화 개념
 
-- `양유성` **9주차** 비동기 호출, 타이머 API
+- `양유성` **9주차** 비동기 호출, 타이머 API [정리](./LectureNote/week9/note.md)
 - `이상아` **10주차** this, 실행 컨텍스트 [정리](./LectureNote/week10/note.md)
 - `김주완` **11주차** 함수 메소드 [정리](./LectureNote/week11/note.md)
 
