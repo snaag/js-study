@@ -35,8 +35,8 @@
 
 ### Front-End
 
-- `김라희` **7주차** HTML, CSS, DOM 1
-- `김라희` **8주차** HTML, CSS, DOM 2
+- `김라희` **7주차** HTML, CSS, DOM 1 [정리](./LectureNote/week7/note.md)
+- `김라희` **8주차** HTML, CSS, DOM 2 [정리](./LectureNote/week8/note.md)
 
 ### JS 심화 개념
 
